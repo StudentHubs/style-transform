@@ -7,8 +7,12 @@
   "author": "Jon Whitehead",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
+  "prettier": {
+    "singleQuote": true,
+    "trailingComma": "all"
+  },
   "scripts": {
-    "prettier": "prettier --single-quote --trailing-comma all --write \"{src,test}/**/*.ts\"",
+    "prettier": "prettier --write \"{src,test}/**/*.ts\"",
     "clean": "rimraf lib/*",
     "build": "yarn run clean && tsc",
     "test": "jest",
